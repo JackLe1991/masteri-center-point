@@ -375,10 +375,5 @@
 	    field_2: 45624
 	};
 
-	$.ajax({
-	    url: url,
-	    method: "GET",
-	    dataType: "json",
-	    data: data
-	});
+	$.getJSON('http://cors.io/?' + url +'?format=json',function(data){})
 	</script><!-- END BRIZY ASSETS --></body></html>
